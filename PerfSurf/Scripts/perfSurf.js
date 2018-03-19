@@ -36,3 +36,7 @@
     });
 
 }());
+
+(function () {
+    $(".nav-item")[0].classList.add("active");
+}());
