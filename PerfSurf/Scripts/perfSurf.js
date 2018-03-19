@@ -21,10 +21,11 @@
         });
         self.timeSeries = new TimeSeries();
         self.chart.addTimeSeries(self.timeSeries, { lineWidth: 3, strokeStyle: "#00ff00" });
-    }
+    };
 
     ChartEntry.prototype = {
         addValue: function (value) {
+            var self = this;
             self.timeSeries.append(new Date().getTime(), value);
         },
 
